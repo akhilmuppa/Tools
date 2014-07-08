@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:layout_width="match_parent"
+  android:layout_height="match_parent"    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/main_login_bg">
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_login_bg"
+    android:orientation="vertical" >
+
+ 
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="5dp"
+        android:background="#ffffbb33"
+        android:orientation="vertical" >
+
+        <com.osi.tools.utils.RobotoRegularTextView
+            android:id="@+id/titleaa2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:padding="2dp"
+            android:text="Blocking"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/blockswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:padding="5dp"
+        android:textOff=""
+        android:textOn="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="5dp"
+        android:background="#ffffbb33"
+        android:orientation="vertical" >
+
+        <com.osi.tools.utils.RobotoRegularTextView
+            android:id="@+id/titleaa3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:padding="2dp"
+            android:text="Calls"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chkboxall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reject all Calls"
+         android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_margin="5dp"
+        android:background="#ffffbb33"
+        android:orientation="vertical" >
+
+        <com.osi.tools.utils.RobotoRegularTextView
+            android:id="@+id/titleca3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:padding="2dp"
+            android:text="Backup Storage"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/intradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radiobuttonClick"
+            android:text="Internal Storage"
+             android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/extradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radiobuttonClick"
+            android:text="External Storage"
+             android:textSize="14sp"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <com.osi.tools.utils.RobotolightTextView
+        android:id="@+id/extpathtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:padding="2dp"
+        android:text="storage/sdcard/TelephonySettingsBackup"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="4dp"
+        android:background="#000000" />
+    
+      <LinearLayout
+        android:id="@+id/operationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_weight="1"
+            android:textSize="14sp" 
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button"/>
+
+      
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

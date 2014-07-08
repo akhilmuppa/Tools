@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_login_bg"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:padding="2dp" >
+
+        <EditText
+            android:id="@+id/numberen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/imagecon"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Enter Number"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/imagecon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/contactaddd"
+            android:src="@drawable/ic_action_personblack" />
+
+        <Button
+            android:id="@+id/contactaddd"
+            android:layout_width="30dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/whitebutton"
+            android:text="+" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="4dp"
+        android:background="#000000" />
+
+    <com.osi.tools.utils.RobotolightTextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Click on item to change Blocking Options"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/blacklistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#60FFFFFF" >
+    </ListView>
+
+</LinearLayout>

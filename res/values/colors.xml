@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="grey">#ff777777</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_grey">#ff4d4d4d</color>
+    <color name="warning_yellow">#fffbffb6</color>
+    <color name="listing_text">#222222</color>
+    <color name="char_count_grey">#33333333</color>
+    <color name="darkgrey">#292929</color>
+    <color name="lightorange">#F3E2A9</color>
+    <color name="silver">#F2F2F2</color>
+<!--
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="holo_gray_light">#33999999</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="holo_red_dark">#ffcc0000</color>
+    <color name="holo_purple">#ffaa66cc</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_orange_dark">#ffff8800</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_gray_bright">#33CCCCCC</color>
+    -->
+</resources>

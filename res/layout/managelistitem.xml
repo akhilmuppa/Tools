@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#60FFFFFF"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/manageicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/icon_calllog" />
+
+    <com.osi.tools.utils.RobotoRegularTextView
+        android:id="@+id/manageheaderone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/manageicon"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <com.osi.tools.utils.RobotoRegularTextView
+        android:id="@+id/manageheadertwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manageheaderone"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/manageicon"
+        android:text="Date:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#848484"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

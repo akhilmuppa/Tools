@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/numberbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/numberen"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Enter Number"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imagecon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_person" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:id="@+id/ssj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+         android:layout_alignParentBottom="true">
+    
+    
+    <Button
+        android:id="@+id/send"
+       
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#60FFFFFF"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:text="Schedule" />
+    
+     <Button
+        android:id="@+id/sendcancel"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#60FFFFFF"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="Cancel" />
+
+     </LinearLayout>
+     
+    <Button
+        android:id="@+id/new_date_button"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/numberbox"
+        android:background="#60FFFFFF"
+        android:text="Set Time"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/smstxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ssj"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/new_date_button"
+        android:layout_margin="5dp"
+        android:layout_marginTop="42dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Write  Message"
+        android:inputType="textMultiLine"
+        android:lines="5" />
+
+</RelativeLayout>

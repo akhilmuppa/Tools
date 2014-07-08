@@ -1,0 +1,65 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.osi.tools.utils.RobotoRegularTextView
+            android:id="@+id/tocon_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fromcur_editxtnew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:background="@drawable/searchboxbg"
+        android:inputType="number"
+        android:text="1"
+        android:textSize="20sp" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0" >
+
+        <com.osi.tools.androidwheel.WheelView
+            android:id="@+id/p1"
+            android:layout_width="100dp"
+            android:layout_height="200dip" />
+
+        <com.osi.tools.androidwheel.WheelView
+            android:id="@+id/p2"
+            android:layout_width="110dp"
+            android:layout_height="200dip" />
+
+        <com.osi.tools.androidwheel.WheelView
+            android:id="@+id/p3"
+            android:layout_width="110dp"
+            android:layout_height="200dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" >
+    </LinearLayout>
+
+</LinearLayout>

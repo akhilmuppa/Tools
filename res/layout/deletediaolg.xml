@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical" 
+    android:background="@drawable/main_login_bg">
+    
+    <com.osi.tools.utils.RobotoRegularTextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="2dp"
+        android:background="#60FFFFFF"
+        android:text="Do you want to Delete?"
+        />
+    
+
+      <LinearLayout
+        android:id="@+id/sasswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+         >
+    
+    
+    <Button
+        android:id="@+id/yescld"
+       
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#60FFFFFF"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:text="Yes" />
+    
+     <Button
+        android:id="@+id/nocld"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#60FFFFFF"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="No" />
+
+     </LinearLayout>
+    
+</LinearLayout>

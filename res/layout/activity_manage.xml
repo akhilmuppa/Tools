@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_login_bg"
+    android:orientation="vertical" >
+
+  
+
+    <RelativeLayout
+        android:id="@+id/longpresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/faded"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/deletefilebt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/trash"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/emailbt"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/deletefilebt"
+            android:background="@drawable/ashbutton"
+            android:focusable="false"
+            android:text="Email" />
+
+        <Button
+            android:id="@+id/restorebt"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/emailbt"
+            android:background="@drawable/ashbutton"
+            android:focusable="false"
+            android:text="Restore" />
+
+        <Button
+            android:id="@+id/backarrowbt"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/backarrow"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blcontactlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/bg_lastbackup"
+        android:padding="5dp" >
+
+        <com.osi.tools.utils.RobotoRegularTextView
+            android:id="@+id/manageheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Last Backup File:"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/manageh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manageheader"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon_disket" />
+
+        <com.osi.tools.utils.RobotolightTextView
+            android:id="@+id/manageapph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manageheader"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/manageh"
+            android:text="Application: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.osi.tools.utils.RobotoRegularTextView
+            android:id="@+id/managename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manageapph"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/manageh"
+            android:text="Name: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.osi.tools.utils.RobotoRegularTextView
+            android:id="@+id/managedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/managename"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/manageh"
+            android:text="Date: "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.osi.tools.utils.RobotoRegularTextView
+        android:id="@+id/managehs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Long Press on item for options"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/managelist"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#60FFFFFF"
+        android:layoutAnimation="@animator/list_layout_controller" >
+    </ListView>
+
+</LinearLayout>
